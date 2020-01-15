@@ -19,7 +19,7 @@ int main()
 	int n;
 	for (n = 0; n<3; n++)
 	{
-		cout << "Person number" << n << endl;
+		cout << "Person number:" <<" "<< n+1 << endl;
 		cout << "-----------------------------------" << endl;
 		cout << "Enter first name: ";
 		cin>>names[n].firstName;
