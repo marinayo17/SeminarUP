@@ -1,0 +1,39 @@
+
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+struct personalName
+	{
+		char firstName[20];
+		char middleName[20];
+		char lastName[20];
+	}names[3];
+void print_name(personalName name){
+cout << name.firstName<<" ";
+cout <<name.middleName<<" ";
+cout << name.lastName << endl;
+}
+
+int main()
+{
+	int n;
+	for (n = 0; n<3; n++)
+	{
+		cout << "Person number" << n << endl;
+		cout << "-----------------------------------" << endl;
+		cout << "Enter first name: ";
+		cin>>names[n].firstName;
+		cout << "Enter middle name: ";
+		cin >> names[n].middleName;
+		cout << "Enter last name: ";
+		cin >> names[n].lastName;
+		cout << "-----------------------------------" << endl;
+
+	}
+
+	cout << "Your names are:"<<endl;
+	for (n = 0; n < 3; n++) {
+		print_name(names[n]);
+	}
+	return 0;
+}
